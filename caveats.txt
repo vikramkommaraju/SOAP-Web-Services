@@ -1,0 +1,8 @@
+This project only has unit test and integration tests.
+
+Integration test using an embedded HTTP server and publishes the web service to a specific URL
+
+The client will then access the WSDL from that URL, get hold of the method stubs and invoke the service methods.
+
+Ideally, the client would use the WSDL to generate all the artifacts (Java POJOs, XSDs etc) and then invoke methods on those objects 
+with the web service deployed on a live glassfish server instead of using an embedded web server.
